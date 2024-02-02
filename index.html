@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    h1{
+        font-size: 50px;
+    padding-top: 20px;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #547AA5;
+    background-color: #293132;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+}
+.box{
+   height: 18vmin;
+   width: 18vmin;
+   border-radius: 5px;
+   border: none;
+   font-size: 8vmin;
+   color: #979596;
+   cursor: pointer;
+   background-color: #474044;
+   
+}
+#reset-btn{
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #4F5165;
+    cursor: pointer;
+}
+#new-btn{
+    padding: 5px 5px;
+    font-size: 20px;
+    background-color: #4F5165;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+#msg{
+    color: white;
+    font-size: 26px;
+}
+.hide{
+    display: none;
+}
+
+
+</style>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <main>
+        <h1>X&O GAME</h1>
+        <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            
+        </div>
+        </div>
+<button id="reset-btn">Reset Button</button>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
